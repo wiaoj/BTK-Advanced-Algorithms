@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\2_DataStructures\2_DataStructures.csproj" />
     <ProjectReference Include="..\3Arrays\3_Arrays.csproj" />
+    <ProjectReference Include="..\4_LinkedList\4_LinkedList.csproj" />
   </ItemGroup>
 
 </Project>
