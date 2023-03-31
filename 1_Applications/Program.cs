@@ -61,20 +61,38 @@
 //    .ToList()
 //    .ForEach(x => Console.WriteLine(x));
 
-using _4_LinkedList.DoublyLinkedList;
+//using _4_LinkedList.DoublyLinkedList;
 
-DoublyLinkedList<Int32> doublyList = new();
-doublyList.AddFirst(5);
-doublyList.AddFirst(7);
+//DoublyLinkedList<Int32> doublyList = new();
+//doublyList.AddFirst(5);
+//doublyList.AddFirst(7);
 
-doublyList.AddLast(8);
-doublyList.AddLast(9);
+//doublyList.AddLast(8);
+//doublyList.AddLast(9);
 
-doublyList.AddAfter(doublyList.Head.Next, new(13));
+//doublyList.AddAfter(doublyList.Head.Next, new(13));
 
 
-foreach(var item in doublyList) {
-    Console.WriteLine(item);
+//foreach(var item in doublyList) {
+//    Console.WriteLine(item);
+//}
+
+//Console.ReadKey();
+
+using _5_SortingAlgorithms.SelectionSort;
+
+Int32[] array = { 16, -71, 23, 44, -55, 12, 0,-7, 55, 40, 6, 82, -7 };
+
+foreach(Int32 item in array) {
+    Console.Write($"{item,-5}");
+}
+
+Console.WriteLine();
+
+SelectionSort.Sort<Int32>(array);
+
+foreach(Int32 item in array) {
+    Console.Write($"{item,-5}");
 }
 
 Console.ReadKey();

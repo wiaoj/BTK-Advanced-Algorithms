@@ -12,6 +12,7 @@
     <ProjectReference Include="..\2_DataStructures\2_DataStructures.csproj" />
     <ProjectReference Include="..\3Arrays\3_Arrays.csproj" />
     <ProjectReference Include="..\4_LinkedList\4_LinkedList.csproj" />
+    <ProjectReference Include="..\5_SortingAlgorithms\12_SortingAlgorithms.csproj" />
   </ItemGroup>
 
 </Project>
