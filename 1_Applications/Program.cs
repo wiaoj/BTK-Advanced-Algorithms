@@ -72,27 +72,50 @@
 
 //doublyList.AddAfter(doublyList.Head.Next, new(13));
 
-
 //foreach(var item in doublyList) {
 //    Console.WriteLine(item);
 //}
 
 //Console.ReadKey();
 
-using _5_SortingAlgorithms.SelectionSort;
+using _5_Stack;
 
-Int32[] array = { 16, -71, 23, 44, -55, 12, 0,-7, 55, 40, 6, 82, -7 };
+Char[] charSet = { 'a', 'b', 'c','d','e' };
+_5_Stack.Stack<Char> stack = new();
+_5_Stack.Stack<Char> stack2 = new(StackType.LinkedList);
 
-foreach(Int32 item in array) {
-    Console.Write($"{item,-5}");
+foreach(var item in charSet) {
+	stack.Push(item);
+	stack2.Push(item);
 }
 
-Console.WriteLine();
+Console.WriteLine($"Count: {stack.Count}");
+Console.WriteLine($"Count: {stack2.Count}");
 
-SelectionSort.Sort<Int32>(array);
+Console.WriteLine($"Peek: {stack.Peek()}");
+Console.WriteLine($"Peek: {stack2.Peek()}");
 
-foreach(Int32 item in array) {
-    Console.Write($"{item,-5}");
-}
+Console.WriteLine($"Pop: {stack.Pop()}");
+Console.WriteLine($"Pop: {stack2.Pop()}");
 
-Console.ReadKey();
+Console.WriteLine($"Peek: {stack.Peek()}");
+Console.WriteLine($"Peek: {stack2.Peek()}");
+
+Console.WriteLine(PostFixExample.Run("231*+9-")); //-4
+//using _12_SortingAlgorithms.SelectionSort;
+
+//Int32[] array = { 16, -71, 23, 44, -55, 12, 0,-7, 55, 40, 6, 82, -7 };
+
+//foreach(Int32 item in array) {
+//    Console.Write($"{item,-5}");
+//}
+
+//Console.WriteLine();
+
+//SelectionSort.Sort<Int32>(array);
+
+//foreach(Int32 item in array) {
+//    Console.Write($"{item,-5}");
+//}
+
+//Console.ReadKey();

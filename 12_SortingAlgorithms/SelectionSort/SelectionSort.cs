@@ -1,4 +1,4 @@
-﻿namespace _5_SortingAlgorithms.SelectionSort;
+﻿namespace _12_SortingAlgorithms.SelectionSort;
 public class SelectionSort {
     public static void Sort<Type>(Type[] array) where Type : IComparable {
         for(Int32 index = default; index < array.Length - 1; index++) {

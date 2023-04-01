@@ -9,10 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\12_SortingAlgorithms\12_SortingAlgorithms.csproj" />
     <ProjectReference Include="..\2_DataStructures\2_DataStructures.csproj" />
-    <ProjectReference Include="..\3Arrays\3_Arrays.csproj" />
+    <ProjectReference Include="..\3_Arrays\3_Arrays.csproj" />
     <ProjectReference Include="..\4_LinkedList\4_LinkedList.csproj" />
-    <ProjectReference Include="..\5_SortingAlgorithms\12_SortingAlgorithms.csproj" />
+    <ProjectReference Include="..\5_Stack\5_Stack.csproj" />
   </ItemGroup>
 
 </Project>
